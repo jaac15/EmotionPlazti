@@ -1,0 +1,15 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<div>
+    @RenderSection("scripts", required: false)
+    <h2>Bienvenida</h2>
+    <h1>@Model.WelcomeMessage</h1>
+    <h4>@Model.FooterMessage</h4>
+    @RenderBody();
+</div>
+
